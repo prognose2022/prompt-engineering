@@ -6,8 +6,8 @@ Biblioteca reutilizável de prompts, templates e práticas para engenharia de so
 
 - Snapshot-base do projeto declarado pelo responsável: `v1.0.0`.
 - A auditoria inicial foi documentada separadamente como relatório de Fase 1 `v1.0.1`; essa identificação não altera retroativamente o snapshot-base.
-- A Fase 2 planeja validar integridade, segurança, licenciamento, testes e prontidão para produção.
-- Este commit inicia a documentação pública de governança. **Não declara que todo o conteúdo da cópia local foi importado ou validado.**
+- A auditoria da Fase 2 foi encerrada com bloqueios de proveniência, licenciamento e prontidão; consulte `docs/PHASE-2-CLOSEOUT.md`.
+- Este repositório documenta governança. **Não declara que todo o conteúdo da cópia local foi importado ou validado.**
 - Nenhum segredo, token, credencial OAuth, arquivo `.env`, dado privado de identidade ou evidência sensível deve ser publicado.
 
 ## Estrutura documental prevista
@@ -16,7 +16,10 @@ Biblioteca reutilizável de prompts, templates e práticas para engenharia de so
 - `docs/PHASE-2-AUDIT-PLAN.md` — plano de auditoria e critérios de aceite.
 - `docs/SECURITY-AND-PRIVACY.md` — regras de segurança e publicação.
 - `docs/PRODUCTION-READINESS.md` — critérios de prontidão.
+- `docs/PHASE-2-CLOSEOUT.md` — resumo público e sanitizado do encerramento da Fase 2.
+- `docs/EVIDENCE-INDEX.md` — referências públicas que sustentam o resumo.
 - `prompts/CUE-PHASE-2-EXECUTION.md` — instruções controladas para CUE no Manus Studio.
+- `ops/README.md` — índice dos controles operacionais.
 
 ## Regras de governança
 
@@ -28,4 +31,4 @@ Biblioteca reutilizável de prompts, templates e práticas para engenharia de so
 
 ## Licença
 
-Consulte [LICENSE](LICENSE). A licença do repositório não certifica autoria de terceiros nem substitui a verificação de licenças das dependências.
+O estado da licença e os passos para confirmá-la estão em [docs/LICENSE-AND-ATTRIBUTION.md](docs/LICENSE-AND-ATTRIBUTION.md). Não há `LICENSE` enquanto a titularidade e as atribuições não forem verificadas.

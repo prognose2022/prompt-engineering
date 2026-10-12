@@ -35,3 +35,7 @@ Cada ação deve incluir:
 ## Publicação segura
 
 Antes de cada commit público, verificar `.env`, arquivos de credenciais, dumps, logs, caminhos pessoais, nomes de clientes, dados privados e histórico de Git. Um scanner sem ocorrências não é prova de ausência absoluta de segredos.
+
+## Resultado da verificação da Fase 2
+
+Uma varredura heurística de padrões comuns GitHub, Google, OpenAI, AWS e PEM não encontrou correspondências nos arquivos textuais examinados. ZIPs, binários e o ambiente virtual não foram examinados por essa varredura; o resultado não comprova ausência geral de segredos. Nenhuma credencial foi reproduzida nesta documentação. Nenhuma permissão, conexão ou configuração OAuth foi alterada.

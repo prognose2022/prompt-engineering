@@ -1,0 +1,39 @@
+# Ambientes e dependências
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.Python
+*.egg-info/
+
+# Segredos e credenciais — nunca versionar valores
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.secret
+secrets/
+credentials.json
+service-account*.json
+
+# Ferramentas locais
+.DS_Store
+.idea/
+.vscode/
+*.swp
+.cursor/
+
+# Relatórios locais com possível vazamento
+*.log
+coverage/
+.pytest_cache/
+/reports/private/

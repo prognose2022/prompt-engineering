@@ -27,3 +27,22 @@ Nenhum critério é considerado aprovado sem evidência rastreável.
 ## Gate de liberação
 
 A liberação não deve avançar enquanto titularidade/licença, exposição de segredos, identidade/autorização ou integridade de origem estiverem em `BLOCKED` ou `FAIL`. A decisão final de produção pertence ao responsável humano.
+
+## Resultados observados na auditoria de 12 de outubro de 2026
+
+| Área | Estado observado | Limite |
+|---|---|---|
+| Proveniência | `BLOCKED` | Cópia local sem histórico Git e divergente da árvore pública; não houve sincronização |
+| Ambiente | `PASS` | Ambiente desta sessão documentado; não representa outros ambientes |
+| YAML — sintaxe | `PASS` | Três templates carregaram com PyYAML 6.0.3 |
+| YAML — esquema | `NOT TESTED` | Schema versionado não localizado |
+| Testes automatizados | `NOT TESTED` | Nenhuma suíte da biblioteca foi localizada |
+| OAuth e CUE | `BLOCKED` | Sessão autenticada e chamada real não foram comprovadas |
+| Segurança | `PARTIAL` | Varredura heurística sem hits, com cobertura limitada |
+| Licença | `BLOCKED` | Titularidade/autorizações não confirmadas; licença permanece `PENDING_VERIFICATION` |
+| GitHub público | `PARTIAL` | Governança documental presente; biblioteca local não importada nem validada |
+| GitHub privado | `NOT TESTED` | Destino e controles não foram confirmados |
+| Rollback | `NOT TESTED` | Nenhum exercício executado |
+| Aprovação humana | `BLOCKED` | Decisão de titularidade e release pendente |
+
+Esta tabela registra a execução delimitada da auditoria; não altera o registro congelado da Fase 1.
